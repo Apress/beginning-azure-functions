@@ -1,0 +1,14 @@
+{
+  "$schema": "http://json.schemastore.org/proxies",
+  "proxies": {
+    "proxy1": {
+      "matchCondition": {
+        "methods": [
+          "GET"
+        ],
+        "route": "/api/customer"
+      },
+      "backendUri": "http://localhost:7071/api/HttpTriggerOData"
+    }
+  }
+}
